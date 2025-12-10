@@ -2,9 +2,9 @@ import json
 
 import pytest
 
-from ocpp.routing import after, create_route_map, on
-from ocpp.v201 import call_result
-from ocpp.v201.enums import Action
+from ocpptwopointone.routing import after, create_route_map, on
+from ocpptwopointone.v201 import call_result
+from ocpptwopointone.v201.enums import Action
 
 
 @pytest.mark.asyncio

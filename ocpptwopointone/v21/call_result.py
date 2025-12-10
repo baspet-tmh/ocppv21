@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Optional
 
-from ocpp.v21.datatypes import (
+from ocpptwopointone.v21.datatypes import (
     AddressType,
     CertificateHashDataChainType,
     CertificateStatusType,
@@ -21,7 +21,7 @@ from ocpp.v21.datatypes import (
     TariffType,
     TransactionLimitType,
 )
-from ocpp.v21.enums import (
+from ocpptwopointone.v21.enums import (
     AuthorizeCertificateStatusEnumType,
     CancelReservationStatusEnumType,
     CertificateSignedStatusEnumType,

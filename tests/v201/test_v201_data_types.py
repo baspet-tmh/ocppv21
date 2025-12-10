@@ -2,7 +2,7 @@ import json
 from dataclasses import asdict, dataclass
 from typing import TypeVar
 
-from ocpp.v201.datatypes import (
+from ocpptwopointone.v201.datatypes import (
     ACChargingParametersType,
     AdditionalInfoType,
     APNType,
@@ -53,7 +53,7 @@ from ocpp.v201.datatypes import (
     VariableMonitoringType,
     VariableType,
 )
-from ocpp.v201.enums import (
+from ocpptwopointone.v201.enums import (
     APNAuthenticationEnumType,
     AttributeEnumType,
     AuthorizationStatusEnumType,

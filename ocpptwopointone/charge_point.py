@@ -7,9 +7,9 @@ import uuid
 from dataclasses import Field, asdict, is_dataclass
 from typing import Any, Dict, List, Union, get_args, get_origin
 
-from ocpp.exceptions import NotImplementedError, NotSupportedError, OCPPError
-from ocpp.messages import Call, MessageType, unpack, validate_payload
-from ocpp.routing import create_route_map
+from ocpptwopointone.exceptions import NotImplementedError, NotSupportedError, OCPPError
+from ocpptwopointone.messages import Call, MessageType, unpack, validate_payload
+from ocpptwopointone.routing import create_route_map
 
 LOGGER = logging.getLogger("ocpp")
 
@@ -166,8 +166,8 @@ def _raise_key_error(action, version):
     the appropriate error.
     """
 
-    from ocpp.v16.enums import Action as v16_Action
-    from ocpp.v201.enums import Action as v201_Action
+    from ocpptwopointone.v16.enums import Action as v16_Action
+    from ocpptwopointone.v201.enums import Action as v201_Action
 
     if version == "1.6":
         try:

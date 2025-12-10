@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List, Optional
 
-from ocpp.v21.enums import (
+from ocpptwopointone.v21.enums import (
     APNAuthenticationEnumType,
     AttributeEnumType,
     AuthorizationStatusEnumType,

@@ -2,9 +2,9 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from ocpp.messages import Call, CallResult
-from ocpp.v201 import ChargePoint, call
-from ocpp.v201.enums import Action
+from ocpptwopointone.messages import Call, CallResult
+from ocpptwopointone.v201 import ChargePoint, call
+from ocpptwopointone.v201.enums import Action
 
 chargingStation = {
     "vendorName": "ICU Eve Mini",

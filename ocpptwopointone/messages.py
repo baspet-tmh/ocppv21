@@ -13,7 +13,7 @@ from typing import Callable, Dict, Union
 from jsonschema import Draft4Validator
 from jsonschema.exceptions import ValidationError as SchemaValidationError
 
-from ocpp.exceptions import (
+from ocpptwopointone.exceptions import (
     FormatViolationError,
     NotImplementedError,
     OCPPError,

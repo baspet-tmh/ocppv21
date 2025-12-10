@@ -7,8 +7,8 @@ import pytest
 from hypothesis import given
 from hypothesis.strategies import binary
 
-import ocpp
-from ocpp.exceptions import (
+import ocpptwopointone
+from ocpptwopointone.exceptions import (
     FormatViolationError,
     NotImplementedError,
     PropertyConstraintViolationError,
@@ -17,7 +17,7 @@ from ocpp.exceptions import (
     UnknownCallErrorCodeError,
     ValidationError,
 )
-from ocpp.messages import (
+from ocpptwopointone.messages import (
     Call,
     CallError,
     CallResult,
@@ -30,7 +30,7 @@ from ocpp.messages import (
     unpack,
     validate_payload,
 )
-from ocpp.v16.enums import Action
+from ocpptwopointone.v16.enums import Action
 
 
 def test_unpack_with_invalid_json():
@@ -413,7 +413,7 @@ async def test_validate_payload_threads(use_threads):
     )
 
     assert threading.active_count() == 1
-    ocpp.messages.ASYNC_VALIDATION = use_threads
+    ocpptwopointone.messages.ASYNC_VALIDATION = use_threads
     await validate_payload(message, ocpp_version="1.6")
     if use_threads:
         assert threading.active_count() > 1

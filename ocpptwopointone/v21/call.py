@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Optional
 
-from ocpp.v21.datatypes import (
+from ocpptwopointone.v21.datatypes import (
     AddressType,
     AuthorizationData,
     BatteryDataType,
@@ -52,7 +52,7 @@ from ocpp.v21.datatypes import (
     TariffType,
     TransactionType,
 )
-from ocpp.v21.enums import (
+from ocpptwopointone.v21.enums import (
     BatterySwapEventEnumType,
     BootReasonEnumType,
     CertificateActionEnumType,

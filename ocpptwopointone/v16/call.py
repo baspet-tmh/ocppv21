@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Union
 
-from ocpp.v16 import datatypes, enums
+from ocpptwopointone.v16 import datatypes, enums
 
 # Most types of CALL messages can originate from only 1 source, either
 # from a Charge Point or Central System, but not from both.

@@ -2,9 +2,9 @@ import json
 from dataclasses import asdict, dataclass
 from typing import TypeVar
 
-from ocpp.v16.call import RemoteStartTransaction
-from ocpp.v16.datatypes import ChargingProfile, ChargingSchedule, ChargingSchedulePeriod
-from ocpp.v16.enums import (
+from ocpptwopointone.v16.call import RemoteStartTransaction
+from ocpptwopointone.v16.datatypes import ChargingProfile, ChargingSchedule, ChargingSchedulePeriod
+from ocpptwopointone.v16.enums import (
     ChargingProfileKindType,
     ChargingProfilePurposeType,
     ChargingRateUnitType,

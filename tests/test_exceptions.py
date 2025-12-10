@@ -1,12 +1,12 @@
 import pytest
 
-from ocpp.exceptions import (
+from ocpptwopointone.exceptions import (
     FormatViolationError,
     ProtocolError,
     TypeConstraintViolationError,
 )
-from ocpp.messages import Call, _validate_payload
-from ocpp.v16.enums import Action
+from ocpptwopointone.messages import Call, _validate_payload
+from ocpptwopointone.v16.enums import Action
 
 
 def test_exception_with_error_details():

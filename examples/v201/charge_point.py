@@ -13,8 +13,8 @@ except ModuleNotFoundError:
     sys.exit(1)
 
 
-from ocpp.v201 import ChargePoint as cp
-from ocpp.v201 import call
+from ocpptwopointone.v201 import ChargePoint as cp
+from ocpptwopointone.v201 import call
 
 logging.basicConfig(level=logging.INFO)
 

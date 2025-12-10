@@ -306,7 +306,7 @@ def _generate_import_statement_for_external_enums(objects: List[Object]) -> str:
 
     for enum in enums:
         if _has_potential_naming_collision_with_a_message(enum.name):
-            code += "from ocpp.v21 import enums\n"
+            code += "from ocpptwopointone.v21 import enums\n"
             break
 
     enums = [
@@ -318,7 +318,7 @@ def _generate_import_statement_for_external_enums(objects: List[Object]) -> str:
     if len(enums) == 0:
         return code
 
-    code += "from ocpp.v21.enums import (\n"
+    code += "from ocpptwopointone.v21.enums import (\n"
     for enum in enums:
         code += f"{TAB}{enum.name},\n"
     code += ")\n"
@@ -334,7 +334,7 @@ def _generate_import_statement_for_external_datatypes(objects: List[Object]) -> 
     if len(objects) == 0:
         return ""
 
-    code = "from ocpp.v21.datatypes import (\n"
+    code = "from ocpptwopointone.v21.datatypes import (\n"
     for object in objects:
         if object.name == "data" and len(object.properties) == 0:
             continue
@@ -391,7 +391,7 @@ def _has_potential_naming_collision_with_a_message(name: str) -> bool:
 
     For example, the Reset request relies on the Reset enum. Without handling these naming collisions, the code for the Reset request looks like this:
 
-        from ocpp.v21.enums import (
+        from ocpptwopointone.v21.enums import (
             Reset,
         )
 
@@ -400,7 +400,7 @@ def _has_potential_naming_collision_with_a_message(name: str) -> bool:
 
     This is wrong. Instead, the code should look like this:
 
-        from ocpp.v21 import enums
+        from ocpptwopointone.v21 import enums
 
         class Reset(StrEnum):
             type: enums.Reset

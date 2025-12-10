@@ -13,9 +13,9 @@ except ModuleNotFoundError:
     sys.exit(1)
 
 
-from ocpp.v21 import ChargePoint as cp
-from ocpp.v21 import call
-from ocpp.v21.datatypes import ChargingStationType
+from ocpptwopointone.v21 import ChargePoint as cp
+from ocpptwopointone.v21 import call
+from ocpptwopointone.v21.datatypes import ChargingStationType
 
 logging.basicConfig(level=logging.INFO)
 

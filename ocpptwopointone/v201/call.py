@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
-from ocpp.v201 import datatypes, enums
+from ocpptwopointone.v201 import datatypes, enums
 
 
 @dataclass

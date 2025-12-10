@@ -3,9 +3,9 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from ocpp.messages import Call, CallResult
-from ocpp.v16 import ChargePoint, call
-from ocpp.v16.enums import Action
+from ocpptwopointone.messages import Call, CallResult
+from ocpptwopointone.v16 import ChargePoint, call
+from ocpptwopointone.v16.enums import Action
 
 
 @pytest.fixture

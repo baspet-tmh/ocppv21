@@ -2,31 +2,31 @@ from dataclasses import asdict
 
 import pytest
 
-from ocpp.charge_point import (
+from ocpptwopointone.charge_point import (
     camel_to_snake_case,
     remove_nones,
     serialize_as_dict,
     snake_to_camel_case,
 )
-from ocpp.messages import Call
-from ocpp.routing import after, create_route_map, on
-from ocpp.v16 import ChargePoint as cp_16
-from ocpp.v16.call import BootNotification, GetConfiguration, MeterValues
-from ocpp.v16.call_result import BootNotification as BootNotificationResult
-from ocpp.v16.datatypes import MeterValue, SampledValue
-from ocpp.v16.enums import Action, RegistrationStatus
-from ocpp.v201 import ChargePoint as cp_201
-from ocpp.v201 import call_result, datatypes, enums
-from ocpp.v201.call import GetVariables as v201GetVariables
-from ocpp.v201.call import SetNetworkProfile as v201SetNetworkProfile
-from ocpp.v201.datatypes import (
+from ocpptwopointone.messages import Call
+from ocpptwopointone.routing import after, create_route_map, on
+from ocpptwopointone.v16 import ChargePoint as cp_16
+from ocpptwopointone.v16.call import BootNotification, GetConfiguration, MeterValues
+from ocpptwopointone.v16.call_result import BootNotification as BootNotificationResult
+from ocpptwopointone.v16.datatypes import MeterValue, SampledValue
+from ocpptwopointone.v16.enums import Action, RegistrationStatus
+from ocpptwopointone.v201 import ChargePoint as cp_201
+from ocpptwopointone.v201 import call_result, datatypes, enums
+from ocpptwopointone.v201.call import GetVariables as v201GetVariables
+from ocpptwopointone.v201.call import SetNetworkProfile as v201SetNetworkProfile
+from ocpptwopointone.v201.datatypes import (
     ComponentType,
     EVSEType,
     GetVariableDataType,
     NetworkConnectionProfileType,
     VariableType,
 )
-from ocpp.v201.enums import (
+from ocpptwopointone.v201.enums import (
     OCPPInterfaceEnumType,
     OCPPTransportEnumType,
     OCPPVersionEnumType,

@@ -13,10 +13,10 @@ except ModuleNotFoundError:
 
     sys.exit(1)
 
-from ocpp.routing import on
-from ocpp.v16 import ChargePoint as cp
-from ocpp.v16 import call_result
-from ocpp.v16.enums import Action, RegistrationStatus
+from ocpptwopointone.routing import on
+from ocpptwopointone.v16 import ChargePoint as cp
+from ocpptwopointone.v16 import call_result
+from ocpptwopointone.v16.enums import Action, RegistrationStatus
 
 logging.basicConfig(level=logging.INFO)
 

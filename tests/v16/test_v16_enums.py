@@ -1,5 +1,5 @@
 # flake8: noqa
-from ocpp.v16.enums import *
+from ocpptwopointone.v16.enums import *
 
 
 def test_authorization_status():

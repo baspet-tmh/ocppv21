@@ -1,4 +1,4 @@
-from ocpp.v201.enums import ConnectorEnumType, DataEnumType, TxStartStopPointEnumType
+from ocpptwopointone.v201.enums import ConnectorEnumType, DataEnumType, TxStartStopPointEnumType
 
 
 def test_connector_type():
