@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ocpp"
+name = "ocpptwopointone"
 version = "2.1.0"
 description = "Python package implementing the JSON version of the Open Charge Point Protocol (OCPP)."
 authors = [
@@ -15,7 +15,7 @@ authors = [
 	"dx <dx@mobilityhouse.com>",
 	"Jan Vincke <jan.vincke@mobilityhouse.com>",
 ]
-repository = "https://github.com/mobilityhouse/ocpp"
+repository = "https://github.com/mobilityhouse/ocppv21"
 documentation = "https://ocpp.readthedocs.io/en/latest/"
 license = "MIT"
 readme = "README.rst"
